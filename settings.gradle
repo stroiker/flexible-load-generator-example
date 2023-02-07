@@ -1,0 +1,8 @@
+rootProject.name = 'flexible-load-generator-example'
+
+sourceControl {
+    gitRepository("https://github.com/stroiker/flexible-load-generator.git") {
+        producesModule("me.stroiker:flexible-load-generator")
+    }
+}
+

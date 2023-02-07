@@ -1,0 +1,22 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version "$kotlinVersion"
+    id 'org.springframework.boot' version "$springBootVersion"
+}
+
+group 'me.stroiker'
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+dependencies {
+    implementation "org.springframework.boot:spring-boot-starter-web:$springBootVersion"
+    implementation "me.stroiker:flexible-load-generator:$flexibleLoadGeneratorVersion"
+}
+
+bootJar {
+    mainClass = 'me.stroiker.flexibleloadgenerator.example.App'
+    archiveName 'flexible-load-generator-example.jar'
+}
+
