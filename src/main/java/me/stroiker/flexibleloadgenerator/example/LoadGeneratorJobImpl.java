@@ -7,8 +7,9 @@ import org.springframework.stereotype.Component;
 public class LoadGeneratorJobImpl implements LoadGeneratorJob {
 
     @Override
-    public void onEach() {
+    public boolean onEach() {
         System.out.println("Hello World");
+        return true;
     }
 
     @Override
